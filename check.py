@@ -145,7 +145,7 @@ for archive_path in sys.argv[1:]:
                         array = np.asarray(PIL.Image.open(patch))
 
                         if array.dtype != np.uint8:
-                            print(f"\tERROR:\t{patch.name} has dtype {array.dtype} (instead of uint8).")
+                            print(f"\tERROR:  \t{patch.name} has dtype {array.dtype} (instead of uint8).")
                             any_segmentation_error = True
                         if array.shape != expected_shape:
                             print(f"\tERROR:  \t{patch.name} has shape {array.shape} (instead of {expected_shape}).")
